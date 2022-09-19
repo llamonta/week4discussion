@@ -25,7 +25,7 @@ body{
  }
 
  main img{
-    width:24%;
+    width: 24%;
     box-sizing: border-box;
     padding:15px;
     border:6px dashed green;
@@ -39,4 +39,20 @@ body{
     background-color: bisque;
     margin-bottom: 10px;
     text-align: center;
+ }
+ .gallery{
+   display: grid;
+   grid-template-columns: 250px 250px;
+   width: 90%;
+   margin:auto;
+   border: 2px dashed green;
+   justify-content: center;
+   align-items: center;
+ }
+ .gallery img{
+   width: 95%;
+   border: 5px solid red;
+ }
+ .gallery img:last-child{
+   grid-column: 1 /span 2;
  }
